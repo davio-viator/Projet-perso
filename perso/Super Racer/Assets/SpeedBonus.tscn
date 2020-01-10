@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/SpeedBonus.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/speed boost.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 2.12994, 1.70717 )
+
+[node name="SpeedBonus" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 1e-005, 1e-005 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 2 )
+
+[node name="BonusArea" type="Area2D" parent="."]
+position = Vector2( -15.3636, 0 )
+scale = Vector2( 2.91, 9.65 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BonusArea"]
+shape = SubResource( 2 )
+[connection signal="area_entered" from="BonusArea" to="." method="_on_BonusArea_area_entered"]
+[connection signal="body_entered" from="BonusArea" to="." method="_on_BonusArea_body_entered"]
+[connection signal="body_exited" from="BonusArea" to="." method="_on_BonusArea_body_exited"]

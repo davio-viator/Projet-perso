@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Vaisseau.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/ship_trim.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="Vaisseau" type="KinematicBody2D"]
+position = Vector2( 130, 360 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+rotation = 1.5708
+scale = Vector2( 0.15, 0.2 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -2.07569, 10.481 )
+rotation = -1.5708
+scale = Vector2( 0.816019, 9.56896 )
+build_mode = 1
+polygon = PoolVector2Array( -15.9016, -3.31667, 41.3797, -3.31665, 41.3795, 0.664278, 18.8278, 2.35665, 14.5428, 4.62597, 11.3856, 4.62597, 6.64987, 2.37588, -15.9017, 0.625798 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 19.0116, -12.7101 )
+
+[node name="Position2D2" type="Position2D" parent="."]
+position = Vector2( 19.0116, 12.4724 )
+
+[node name="ShipArea" type="Area2D" parent="."]
+visible = false
+modulate = Color( 0.423529, 1, 0.392157, 1 )
+self_modulate = Color( 0.388235, 0.737255, 0.54902, 1 )
+show_behind_parent = true
+scale = Vector2( 4.2, 2.35 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ShipArea"]
+shape = SubResource( 1 )
