@@ -1,0 +1,70 @@
+/*body{
+    background-color:#8d8f8d;
+}*/
+
+#annonce{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5rem;
+}
+#taille{
+    width: 24%;
+    height: 1.8rem;
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-left: 34%;
+    float: left;
+}
+
+
+#values{
+    background-color: darkgray;
+    height: 30vw;
+    width: 100%;
+}
+
+#submit{
+    background-color: white;
+    border-color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 18;
+    width: 7%;
+    height: 1.8rem;
+    text-align: center;
+    margin-top: -1.8rem;
+    margin-left: 59%;
+    float: left;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1.7rem;
+    margin-top: 0.5vw;
+    margin-bottom: 0.8vw;
+}
+
+#board {
+    display: none;
+    width: 50%;
+    border-radius: 1rem;
+    margin-top: 50rem;
+    height:40vw;
+    background-color:#cfc2c2;
+    margin-left: 25%;
+    margin-top:5rem;
+    padding: 1vw;
+}
+.case {
+    background-color: #ffffff;
+    stroke-opacity: 0;
+    border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    box-shadow:  inset -0px -0px 4px 4px rgba(140,140,140,0.28);
+    border-color: darkgray;
+
+
+}
