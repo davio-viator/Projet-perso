@@ -5,6 +5,10 @@ $(document).ready(()=>{
     var casee = '<div class="case"></div>'
     var cases = this.document.getElementsByClassName("case");
     var rows = this.document.getElementsByClassName("row");
+    if(rows[0]!=null){
+        var marg = rows[0].style.marginTop;
+    }
+    
     const mouse = {
         x:undefined,
         y:undefined
@@ -21,9 +25,13 @@ $(document).ready(()=>{
         for(i=0;i<cases.length;i++){
             cases[i].style.height = tailleF;
             cases[i].style.width = tailleF;
+            //this.console.log(cases[i])
         }
         
-    })
+    });
+
+
+
 
     $('#submit').click(function(){
         taille = document.getElementById("taille").value;
@@ -47,41 +55,51 @@ $(document).ready(()=>{
         makeRows(taille);
     }
 
-    $('.row').click(function(){
-        console.log('je suis rentrer');
-        var value = $('.case').innerHTML;
-        console.log(getId(value));
-    });
 
     setInterval(function(){
-        
-        $('.case').click(function(){
-            // console.log($('.case').innerHTML);
-            //console.log('je suis rentrer');
-            var tes
-            // var value = $('.case').innerHTML;
-            // console.log(getId(value));
-            //console.log($('.case')[0])
-            
-            for(var i=0;i<cases.length;i++){
-                positions[i] = cases[i].getBoundingClientRect();
-            }
-            for(var i=0;i<cases.length;i++){
-                //console.log(positions)
-                Xx = positions[i];
-                Yy = positions[i];
-                if(isIn(Xx.x,Xx.x+Xx.width,mouse.x) && isIn(Yy.y,Yy.y+Yy.width,mouse.y)){
-                    //console.log("mouse value : "+mouse.x+" : "+mouse.y+"\ncase["+i+"] : "+Xx+" : "+Yy);
-                    cases[i].style.backgroundColor="55ff00";
+        var test = $('.case')
+            test.contextmenu(function(event){
+                if(event.button===2){
+                    for(var i=0;i<cases.length;i++){
+                        positions[i] = cases[i].getBoundingClientRect();
+                    }
+                    for(var i=0;i<cases.length;i++){
+                        Xx = positions[i];
+                        Yy = positions[i];
+                        if(isIn(Xx.x,Xx.x+Xx.width,mouse.x) && isIn(Yy.y,Yy.y+Yy.width,mouse.y)){
+                            cases[i].style.backgroundColor="ffffff";
+                            
+                        }
+                    }
+                }
+            });
+        $('.case').click(function(event){
+            if(event.button===0){
+                for(var i=0;i<cases.length;i++){
+                    positions[i] = cases[i].getBoundingClientRect();
+                }
+                for(var i=0;i<cases.length;i++){
+                    Xx = positions[i];
+                    Yy = positions[i];
+                    if(isIn(Xx.x,Xx.x+Xx.width,mouse.x) && isIn(Yy.y,Yy.y+Yy.width,mouse.y)){
+                        cases[i].style.backgroundColor="55ff00";
+                        
+                    }
                 }
             }
-            //cases[nb].style.backgroundColor="55ff00";
-            return;
             
+            //return;
             
-        });   
-         //console.log(positions);
+            //console.log("You pressed button: " + event.button);
+        }); 
+        
     },100);
+
+   
+
+
+
+
 
     function isIn(min,max,x){
         if(x>=min && x <=max){
@@ -91,11 +109,6 @@ $(document).ready(()=>{
         }
     }
 
-
-    $('#board').click(function(event){
-        var position = event.clientX+": "+event.clientY;
-        console.log(position);
-    });
 
     function makeRows(nbRow){
         for(i=0;i<nbRow;i++){
@@ -109,7 +122,7 @@ $(document).ready(()=>{
         var n = 0;
         for(i=0;i<rows.length;i++){
             for(j=0;j<nbColumn;j++){
-                rows[i].innerHTML+='<div class="case" id="'+n+'"></div>';
+                rows[i].innerHTML+=casee;
                 n++;
             }
         }
@@ -131,13 +144,10 @@ $(document).ready(()=>{
                 nb++;
             }
         }
-        console.log(Board);
+        //console.log(Board);
         
     }
 
-    
-
-    
 
     addEventListener('mousemove',event =>{
         mouse.x=event.clientX
