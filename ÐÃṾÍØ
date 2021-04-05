@@ -1,0 +1,501 @@
+ÐÃṾÍØ
+
+formation
+ce qu'on veut faire
+ce qu'on attend du cours ce qu'on connait du cours
+
+_-¯
+g
+
+danger evoque
+solution evoqué/proposer
+334960/
+
+
+210003
+000009/001
+000009/001/004
+
+
+pointage de facture
+
+
+jeudi 14
+
+https://twitter.com/idromele_/media
+
+supply chain
+polytech
+
+You're getting to be a cursed cunt Kyus
+I'm just a demon boy
+Each day I get some souls
+I like exploring
+I'm Kyus
+So many spells to cast
+I try but people die
+I'll stare at their corpse
+I'm Kyus
+My world is burning
+Changing each day
+With Hydra and Santa
+I'm finding my way!
+Growing up is not so tough
+'Cept when I've had enough
+But there's lots of fun stuff
+I'm Caillou
+Kyus
+KyusI'm Caillou
+That's me!
+
+
+
+let playerArray = document.getElementsByClassName("player")
+
+for (let i=0;i<playerArray.length;i++){
+    playerArray[i].style.opacity = 0.3
+}
+
+
+raven loft
+
+
+she's been bitten twice by the demon afterwads the demon followed her 
+not sure of the effect and when her to flee from him
+have dream of him 
+
+
+
+stachel
+
+dragon car fetish
+
+
+
+
+
+Istp davio
+Infp Cami/Lucas
+Enfp Irem
+Entp: katie
+
+
+	true 1
+1 demon prince of chaos p8
+1 fateskimmer p9 
+1 kairos fateweaver p14
+1 (20) furies p8
+1 soul grinder p10
+
+
+	true 2
+1 demon prince of chaos P8 1 magic Bolt of change 
+1 fateskimmer P9 Tyrant of the Warp 2 magic Bone of change, Infernal Gateway
+1 lord of change P14 2 magic Treason of Tzeentch Infernal Gateway
+2 Exalted Flamer P6
+2 (10) pink horror of tzeentch P8 1 magic Bolt of Change
+1 The blue scribes P5
+
+	true 3
+1 demon prince of chaos P8 1 magic Bolt of change 
+1 fateskimmer P9 Tyrant of the Warp 2 magic Bone of change, Infernal Gateway
+2 (10) pink horror of tzeentch P8 1 magic Bolt of Change
+1 (10) blue horror of tzeentch P4 1 Treason of Tzeentch
+2 Exalted Flamer P6
+1 Soul Grinder P9
+1 (10) Furies P4
+
+
+	1 over
+1 lord of change P14
+2 (10) pink horror of tzeentch P8
+2 (6) flammer of tzeentch P18
+1 exalted flamer of tzeentch p3
+2 Brimstone Horrors of tzeentch p8
+
+
+
+
+
+Jayden Kith the Kid 
+annoying style of duel
+
+small 17yo golden spiky hair
+
+
+very susceptible to being called short 
+was annoyed to always being made fun of so he decided to use the most annoying type of duel
+lots of traps and stop play
+he now enjoy seeing people stuggle 
+
+
+dingo blake hood 
+
+
+エッセルとただれた関係になり隊
+Esseru to tadareta kankei ni nari tai
+AMNERO 2
+
+
+sansan Pierre Alexy
+
+
+
+ae²²ea²ea²ea²ea²
+
+
+
+necrons
+custodes
+(gray nights)
+
+
+NecronsDaemons
+
+
+Pyromancie
+Aquamancie
+Theramancie
+Zephymancie / Voximancie / Halomancie
+Cryomancie
+Aetasmancie
+Necromancie
+Spirumancie
+Corrusmancie (dark)
+Glimmancie
+Oniromancie
+Veinmancie
+
+NecromancieFormation
+
+
+2sp + 2gp + 15sp + 5sp + 2sp + 1gp + 2gp + 2gp + 2gp
+
+
+jewelry
+jewel plaza
+jewhuahua
+
+
+hendrilrzf
+
+BR 1 : 1.Sudden Storm
+BR 2 : Vengeful Storm
+BR 3 : 1.Undying Legions
+BR 4 : 1.Conquering Tyrant
+BR 5 : 2.Eternal Guardion
+
+1:14
+2:51
+
+
+One piece 781
+One piece 810
+One piece 838
+One piece 846
+One piece 879
+One piece S21E15
+One piece S21E20
+One piece S21E22
+
+1:18:34
+
+まぐろ帝國
+@tunateisyoku
+
+あんばらんす
+@UnBaLanCE_Dou
+
+DB Browser for SQLite
+
+Yeah Pram is just a
+
+Fantastic
+Awesome
+Gamer
+
+knockout city
+
+
+jPanel.addMouseMotionListener(new MouseMotionAdapter() {
+			public void mouseMoved(MouseEvent me) {
+				Cercle teteF = jPanel.getTete();
+				Point p = MouseInfo.getPointerInfo().getLocation();
+				System.out.println("Point[x="+me.getX()+",y="+ me.getY()+"]");
+				if(teteF.contient(me.getX(), me.getY())) {
+					System.out.println("a l'interieur de la tete");
+					System.out.println("Button pressed="+me.getButton());
+					if(me.getButton() == MouseEvent.BUTTON1) {
+						teteF.setCouleur(Color.RED);
+						getContentPane().repaint();
+					}
+				}else {
+					System.out.println("a l'exterieur de la tete");
+				}
+			}
+		});
+
+
+		10-11 +0
+		12-13 +1
+		14-15 +2
+		16-17 +3
+		18-19 +4
+		20-21 +5
+
+
+		1		−5
+		2–3		−4
+		4–5		−3
+		6–7		−2
+		8–9		−1
+		10–11	+0
+		12–13	+1
+		14–15	+2
+		16–17	+3
+		18–19	+4
+		20–21	+5
+		22–23	+6
+		24–25	+7
+		26–27	+8
+		28–29	+9
+		30		+10
+
+
+
+bitch perra
+
+let t = document.getElementById("test")
+for (let i=0;i<256;i++){
+    for(let j=0;j<256;j++){
+        for(let k=0;k<256;k++){
+            t.style.color = `#${i}.toString(16)${j}.toString(16)${k}.toString(16))`
+        }
+    }
+}
+
+
+
+let t = document.getElementById("test")
+for (let i=0;i<256;i++){
+    for(let j=0;j<256;j++){
+        for(let k=0;k<256;k++){
+            t.style.color = `#${i}.toString(16)${j}.toString(16)${k}.toString(16))`
+            //console.log(`#${i.toString(16)}${j.toString(16)}${k.toString(16)}`)
+        }
+    }  
+}
+
+
+
+
+let t = document.getElementById("test")
+for (let i=0;i<256;i++){
+    for(let j=0;j<256;j++){
+        for(let k=0;k<256;k++){
+            console.log(i,j,k)
+        }
+    }
+}
+
+
+
+mdp subfactory = XqHGmqm3gBc45PP
+mdp betaseries = XqHGmqm3gBc45PP
+dater naissance beta series 25/12/1996
+camilatexeiralfm@gmail.com
+
+
++1 to wound for obscure de;olitioin
+reroll qdvanqce roll scout
++1 to shoot co;s
+
+zhen chqrge or get chqrge +1 to hit
+
+
+1000 charge perso
+appro atelier 1 atelier 2 distri 
+
+1000*10%  1000*35%  1000*35% 1000*20%
+
+
+					Administration	Entretien		Approvi			Atelier1 		Atelier2 		Distribution
+autre charge		6k*5% 300		6k*50% 3000 	6000*10% 600									6k*35% 2100
+impot				4k*20% 800																		4k*80% 3200
+charge personelle	25k*15% 3k75	25k*10% 2k5		25k*5% 1k25k	25k*35% 8k75	25k*30% 7k5		25k*5% 1k25
+autre char gest		800/75% 600						800*5% 40										800*20% 160
+dot ammo 			3k2 3/16 600									3k2 6/16 1200	3k2 7/16 1400
+
+					6050			5500			1890			9950			8900			6710
+autre charge				
+admini 				6050 			0				605				1210			1210			3025
+Entretien 			0				5500							1650			1650			2200
+total												2495			12810			11760			11935
+nombre UO											25				1000			1000			1300
+cout UO												99.8			12.81			11.76			9.18
+
+					Quantité 		prix uni 		total
+prix achat			12				1000			12000
+frai achat			12				99.8			1197.6
+cout d'achat		12				1099.8			13197.6
+
+					Quantité 		prix uni 		total
+prix achat			13				1500			19500
+frai achat			13				99.8			1297.4
+cout d'achat		13				1599.8			20797,4
+
+					Quantité 		prix uni 		total
+prix prod			13				1500			19500
+frai prod			13				99.8			1297.4
+cout prod			13				1599.8			20797,4
+
+					qte				prix uni 		total
+MP1					6				1099.8			6598.8
+MP2					6,5				1599.8			10398.7
+Main doeuvre		800				50				40000
+Ate1 				800				12.81			10248
+Ate2 				250				11.76			2940
+cout de prod		20 cf descri	3509.28			cor 70185.5
+frai prod			cor 900			9.18			8262
+
+
+
+
+rapport technech opaque
+
+differencier partie technique et gestion de projet(rapport d'activité)
+
+gestion projet partie methodologie avec qui quel outils comment les taches on ete gerer repartition des taches
+
+
+
+blue eyes blond hair tall and skinny half elfe
+
+
+
+
+
+yeska
+
+henric coffin maker
+
+next time on dragon ball Z go to the coffin maker
+
+Original seed ljSEXjLY8F
+New seed wVJCZahxX8
+
+
+Numeral symbols
+Name	Western Arabic	Roman	Eastern Arabic	Hebrew
+zero	0	 	٠	 
+one	1	I	١	א
+two	2	II	٢	ב
+three	3	III	٣	ג
+four	4	IV	٤	ד
+five	5	V	٥	ה
+six	6	VI	٦	ו
+seven	7	VII	٧	ז
+eight	8	VIII	٨	ח
+nine	9	IX	٩	ט
+ten	10	X	١٠	י
+eleven	11	XI	١١	יא
+twelve	12	XII	١٢	יב
+thirteen	13	XIII	١٣	יג
+fourteen	14	XIV	١٤	יד
+fifteen	15	XV	١٥	טו
+sixteen	16	XVI	١٦	טז
+seventeen	17	XVII	١٧	יז
+eighteen	18	XVIII	١٨	יח
+nineteen	19	XIX	١٩	יט
+twenty	20	XX	٢٠	כ
+thirty	30	XXX	٣٠	ל
+forty	40	XL	٤٠	מ
+fifty	50	L	٥٠	נ
+sixty	60	LX	٦٠	ס
+seventy	70	LXX	٧٠	ע
+eighty	80	LXXX	٨٠	פ
+ninety	90	XC	٩٠	צ
+one hundred	100	C	١٠٠	ק
+
+
+paul
+abyss watcher +4
+abyss watcher +9
+
+Lucas abyss watcher +1
+Lucas abyss watcher +5
+
+1st duo 3 try
+2nd duo 8 try
+
+lucas stay demon +1
+Paul  stray +0
+
+Suite a l'analyse du contexte de ce projet voici les besoins qui ont ete exposé
+
+
+Le projet doit permettre avant tout que l'utilisateur puisse l'utiliser comme un SGBD depuis l'interface
+
+pour cette application plusieur besoin ont ete definie grace au SDID du gard et elle seront 
+
+jdelebarre34@gmail.com
+
+
+
+sword of a masochish fight enthousiast that when cut heals you
+
+holtz
+
+next dnd session break the windows
+
+back to the ashes
+
+vigil
+
+ender lilise
+
+
+paul sulivan
++0
++0
+
+lucas sulivan
++0
++1
+
+
+paul aldritch
++1
++2
+
+lucas
+null
++4
+
+
+30022
+
+
+site web site mutualisé pour les commercer pour les municipalité click and collect
+reproduire ce qui ce passe sur amazon et cdiscount
+s'incrire et proposer ses produit
+visite le site
+choisir produit
+rediriger vers l'entreprise qui propose le produit
+
+modélisez
+cahier des charges ✓
+problematique
+structure de donnée
+maquetage
+cas d'utilisation
+automatisé
+
+ville tartenpion
+
+mdp jooble EcranJoyeux
+
+MartinG12377971
+bust a nut then i go bout mah day : https://twitter.com/i/status/1374113981279916046
+
+dadito

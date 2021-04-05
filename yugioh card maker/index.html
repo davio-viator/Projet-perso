@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=css.css>
+  <script type="text/javascript" src="./js/submit.js"></script>
+  <title>YU-GI-OH</title>
+</head>
+<body>
+  <div style="flex: 1">
+    <div class="ipsfocusBox">
+        <div class="cardmaker-body">
+            <form id="cardinfo" style="flex: 1">
+                <table style="display: block; width: 100%">
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td style="width: 40%">Name:</td>
+                        <td>
+                            <input type="text" class="cardmaker-input-text input_text" name="name" id="name"/>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Card Type:</td>
+                        <td>
+                            <select class="cardmaker-select" name="cardtype" id="cardtype">
+                                <option value="Monster">Monster</option>
+                                <option value="Ritual">Ritual</option>
+                                <option value="Fusion">Fusion</option>
+                                <option value="Spell">Spell</option>
+                                <option value="Trap">Trap</option>
+                                <option value="Synchro">Synchro</option>
+                                <option value="Xyz">Xyz</option>
+                            </select>
+                            <select class="cardmaker-select" name="subtype" id="subtype">
+                                <option value="normal">Normal</option>
+                                <option value="effect">Effect</option>
+                                <option value="divine">Divine</option>
+                                <option value="gemini">Gemini</option>
+                                <option value="spirit">Spirit</option>
+                                <option value="toon">Toon</option>
+                                <option value="tuner">Tuner</option>
+                                <option value="union">Union</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Attribute:</td>
+                        <td>
+                            <select class="cardmaker-select" name="attribute" id="attribute">
+                                <option value="Light">Light</option>
+                                <option value="Dark">Dark</option>
+                                <option value="Fire">Fire</option>
+                                <option value="Water">Water</option>
+                                <option value="Wind">Wind</option>
+                                <option value="Earth">Earth</option>
+                                <option value="Divine">Divine</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Level:</td>
+                        <td>
+                            <select class="cardmaker-select" name="level" id="level">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Trap/Spell Type:</td>
+                        <td>
+                            <select class="cardmaker-select" name="trapmagictype" id="trapmagictype">
+                                <option value="None">None</option>
+                                <option value="Equip">Equip</option>
+                                <option value="Continuous">Continuous</option>
+                                <option value="Counter">Counter</option>
+                                <option value="Quick-Play">Quick-Play</option>
+                                <option value="Field">Field</option>
+                                <option value="Ritual">Ritual</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Card Rarity:</td>
+                        <td>
+                            <select class="cardmaker-select" name="rarity" id="rarity">
+                                <option value="Common">Common</option>
+                                <option value="Rare">Rare</option>
+                                <option value="Super Rare">Super Rare</option>
+                                <option value="Ultra Rare">Ultra Rare</option>
+                                <option value="Secret Rare">Secret Rare</option>
+                                <option value="Ultimate Rare">Ultimate Rare</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Picture URL:</td>
+                        <td>
+                            <div style="display: flex">
+                                <input type="text" class="cardmaker-input-text input_text" name="picture" id="picture" placeholder="Picture URL"/>
+                                <input type="button" class="ipsButton ipsButton_verySmall ipsButton_secondary cardmaker-button" id="uploadButton" value="Upload" style="margin-left: 4px"/>
+                            </div>
+                            <input type="file" id="upload" accept="image/*" data-max-size="5000" style="display: none"/>
+                            <!--<input
+type="button"
+class="ipsButton cardmaker-button"
+value="Upload"
+/>-->
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Circulation:</td>
+                        <td>
+                            <input type="text" class="cardmaker-input-text input_text" name="circulation" id="circulation"/>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Set ID:</td>
+                        <td>
+                            <input type="text" class="cardmaker-input-text input_text" name="set1" id="set1" size="5" maxlength="5"/>
+                            -
+                            <input type="text" class="cardmaker-input-text input_text" name="set2" id="set2" size="5" maxlength="5"/>
+                            <!--<input
+                            type="checkbox"
+                            name="inset"
+                            id="inset"
+                            disabled="true"
+                            />
+                            Save to set -->
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Type:</td>
+                        <td>
+                            <select class="cardmaker-select" name="subtype2" id="type">
+                                <option value="Aqua">Aqua</option>
+                                <option value="Beast">Beast</option>
+                                <option value="Beast_Warrior">Beast Warrior</option>
+                                <option value="Cyberse">Cyberse</option>
+                                <option value="Dinosaur">Dinosaur</option>
+                                <option value="Divine_Beast">Divine Beast</option>
+                                <option value="Dragon">Dragon</option>
+                                <option value="Fairy">Fairy</option>
+                                <option value="Fiend">Fiend</option>
+                                <option value="Fish">Fish</option>
+                                <option value="Insect">Insect</option>
+                                <option value="Machine">Machine</option>
+                                <option value="Plant">Plant</option>
+                                <option value="Psychic">Psychic</option>
+                                <option value="Pyro">Pyro</option>
+                                <option value="Reptile">Reptile</option>
+                                <option value="Rock">Rock</option>
+                                <option value="Sea_Serpent">Sea Serpent</option>
+                                <option value="Spellcaster">Spellcaster</option>
+                                <option value="Thunder">Thunder</option>
+                                <option value="Warrior">Winged Beast</option>
+                                <option value="Winged_Beast">Union</option>
+                                <option value="Wyrm">Wyrm</option>
+                                <option value="Zombie">Zombie</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Description:</td>
+                        <td>
+                            <textarea name="carddescription" id="carddescription" style="height: 46px; font-size: 10px" cols="55" rows="4"></textarea>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>ATK / DEF:</td>
+                        <td>
+                            <input type="text" class="cardmaker-input-text input_text" name="atk" id="atk" size="4" maxlength="4"/>
+                            /
+                            <input type="text" class="cardmaker-input-text input_text" name="def" id="def" size="4" maxlength="4"/>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Creator:</td>
+                        <td>
+                            <input type="text" class="cardmaker-input-text input_text" name="creator" id="creator"/>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Year:</td>
+                        <td>
+                            <input type="text" class="cardmaker-input-text input_text" name="year" id="year" size="4" maxlength="4"/>
+                        </td>
+                    </tr>
+                    <tr class="ipsDataItem cardmaker-row">
+                        <td>Serial Number:</td>
+                        <td>
+                            <input type="text" class="cardmaker-input-text input_text" name="serial" id="serial" size="8" maxlength="8"/>
+                            <a href="#" id="random" class="ipsType_light">
+                                <i class="fa fa-random"></i>
+                                Random
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="cardmaker-footer">
+                    <input name="generate" class="ipsButton ipsButton_primary cardmaker-button" id="generate" type="button" value="Generate" style="font-size: 16px; min-width: 0px"/>
+                    <!--<input
+name="save"
+class="ipsButton cardmaker-button"
+id="save"
+type="button"
+value="Save"
+style="font-size:16px;min-width:0px"
+/>-->
+                </div>
+            </form>
+            <div class="cardmaker-preview">
+                <img style="width: 333px" id="card" src="./uploads/createdcard.png" alt="Yu-Gi-Oh Card" style="border: 0"/>
+                <center>
+                    <input type="text" name="url" id="url" style="width: 98%; display: none"/>
+                </center>
+                <div id="isurl"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

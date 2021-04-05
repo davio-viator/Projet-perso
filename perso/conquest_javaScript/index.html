@@ -20,29 +20,29 @@
               document.addEventListener("contextmenu", function(e){
                 e.preventDefault();
               }, false);
-              document.addEventListener("keydown", function(e) {
-              //document.onkeydown = function(e) {
-                // "I" key
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                  disabledEvent(e);
-                }
-                // "J" key
-                if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                  disabledEvent(e);
-                }
-                // "S" key + macOS
-                if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-                  disabledEvent(e);
-                }
-                // "U" key
-                if (e.ctrlKey && e.keyCode == 85) {
-                  disabledEvent(e);
-                }
-                // "F12" key
-                // if (event.keyCode == 123) {
-                //   disabledEvent(e);
-                // }
-              }, false);
+              // document.addEventListener("keydown", function(e) {
+              // //document.onkeydown = function(e) {
+              //   // "I" key
+              //   if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+              //     disabledEvent(e);
+              //   }
+              //   // "J" key
+              //   if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+              //     disabledEvent(e);
+              //   }
+              //   // "S" key + macOS
+              //   if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+              //     disabledEvent(e);
+              //   }
+              //   // "U" key
+              //   if (e.ctrlKey && e.keyCode == 85) {
+              //     disabledEvent(e);
+              //   }
+              //   // "F12" key
+              //   // if (event.keyCode == 123) {
+              //   //   disabledEvent(e);
+              //   // }
+              // }, false);
               function disabledEvent(e){
                 if (e.stopPropagation){
                   e.stopPropagation();
@@ -53,11 +53,12 @@
                 return false;
               }
             };
+          
           </script>
     
         <div id="values">
             <p id="annonce">Veuiller choisir la taille du plateau (doit etre un nombre impaire exemple 3)</p>
-            <input id="taille" type="number" name="taille">
+            <input id="taille" type="number" name="taille" value=3>
             <input id="submit" type="submit" name="submit" value="Ok">
         </div>
         <p id="display"></p>

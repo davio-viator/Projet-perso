@@ -4,6 +4,8 @@ $(document).ready(()=>{
     var row = '<div class="row"><div>'
     var casee = '<div class="case"></div>'
     var cases = this.document.getElementsByClassName("case");
+    var cases1 = this.document.getElementsByClassName("case1");
+    var cases2 = this.document.getElementsByClassName("case2");
     var rows = this.document.getElementsByClassName("row");
     if(rows[0]!=null){
         var marg = rows[0].style.marginTop;
@@ -16,15 +18,25 @@ $(document).ready(()=>{
     const Board = [];
     var positions = new Array(cases.length);
 
-    var nb = 0;
+    var counter = 0;
     window.addEventListener('resize',function(){
         var size = $("#board").css('height');
         size = parseInt(size);
         var taille = document.getElementById("taille").value;
         tailleF = Math.round(size/taille)-10;
         for(i=0;i<cases.length;i++){
-            cases[i].style.height = tailleF;
-            cases[i].style.width = tailleF;
+            if(cases[i]!== undefined){
+                cases[i].style.height = tailleF;
+                cases[i].style.width = tailleF;
+            }
+            if(cases1[i]!== undefined){
+                cases1[i].style.height = tailleF;
+                cases1[i].style.width = tailleF;
+            }
+            if(cases2[i]!== undefined){
+                cases2[i].style.height = tailleF;
+                cases2[i].style.width = tailleF;
+            }
             //this.console.log(cases[i])
         }
         
@@ -39,7 +51,8 @@ $(document).ready(()=>{
         if(taille%2!=0 && taille >=3){
             document.body.style.backgroundColor = "#8d8f8d";
             document.getElementById("values").style.display = "none";
-            board.style.display = "block";
+            // board.style.display = "block";
+            board.style.visibility = "visible"
             init();
         }
         else{
@@ -50,9 +63,10 @@ $(document).ready(()=>{
 
     function init(){
         var size = $("#board").css('height');
-        size = parseInt(size);
+        //size = parseInt(size);
         taille = document.getElementById("taille").value;
         makeRows(taille);
+        deleteDiv();
     }
 
 
@@ -74,7 +88,7 @@ $(document).ready(()=>{
                 }
             });
         $('.case').click(function(event){
-            if(event.button===0){
+            if(event.button===0 ){
                 for(var i=0;i<cases.length;i++){
                     positions[i] = cases[i].getBoundingClientRect();
                 }
@@ -82,8 +96,20 @@ $(document).ready(()=>{
                     Xx = positions[i];
                     Yy = positions[i];
                     if(isIn(Xx.x,Xx.x+Xx.width,mouse.x) && isIn(Yy.y,Yy.y+Yy.width,mouse.y)){
-                        cases[i].style.backgroundColor="55ff00";
-                        
+                        //cases[i].style.backgroundColor="55ff00";
+                        if(counter%2===0){
+                            cases[i].classList.add('case1')
+                            cases[i].classList.remove('case2')
+                            cases[i].classList.remove('case')
+                            counter++
+                            
+                        }
+                        else if(counter%2===1){
+                            cases[i].classList.add('case2')
+                            cases[i].classList.remove('case1')
+                            cases[i].classList.remove('case')
+                            counter++
+                        }
                     }
                 }
             }
@@ -123,7 +149,7 @@ $(document).ready(()=>{
         for(i=0;i<rows.length;i++){
             for(j=0;j<nbColumn;j++){
                 rows[i].innerHTML+=casee;
-                n++;
+                //n++;
             }
         }
 
@@ -146,6 +172,12 @@ $(document).ready(()=>{
         }
         //console.log(Board);
         
+    }
+
+    function deleteDiv(){
+        for (let index = 0; index < rows.length; index++) {
+             rows[index].children[0].remove() 
+        }
     }
 
 

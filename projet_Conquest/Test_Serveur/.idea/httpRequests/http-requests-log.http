@@ -1,0 +1,11 @@
+GET http://localhost:9090/Server
+Cache-Control: no-cache
+server-test: sendMessage
+
+###
+
+GET http://localhost:9090/server-test
+Cache-Control: no-cache
+
+###
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="client.js"></script>
+</head>
+<body>
+    <form>
+        <input id="textMessage"  type="text">
+        <input id="send" value="Send Message" type="button">
+    </form>
+    <br><textarea id="messageTextArea" rows="10" cols="50"></textarea>
+   <!-- <script type="text/javascript">
+        var webSocket = new WebSocket("ws://localhost:9090/Test_Serveur/server-test");
+        var messageTextArea = document.getElementById("messageTextArea");
+        var textMessage = document.getElementById("textMessage");
+        webSocket.onopen = function(message) {processOpen(message);};
+        webSocket.onmessage = function(message) {processMessage(message);};
+        webSocket.onclose = function(message){processClose(message);};
+        webSocket.onerror = function(message){processError(message);};
+        function processOpen(message) {
+            messageTextArea.value += "Server Conecté ..."+"\n";
+        }
+        function processMessage(message){
+            messageTextArea.value += "recu du server ==>"+message.data+"\n";
+        }
+        function sendMessage(){
+            if(textMessage.value!=="close"){
+                webSocket.send((messageTextArea.value));
+                textMessage.value += "envoyer au serveur ==>" + textMessage.value+"\n";
+                textMessage.value="";
+            }else webSocket.close();
+
+        }
+        function processClose(message) {
+            webSocket.send("Client déconnecté ...");
+            messageTextArea.value += "Server Déconnecté ..."+"\n";
+        }
+        function processError(message) {
+            messageTextArea.value += "Error ..."+"\n";
+        }
+    </script>-->
+</body>
+</html>
