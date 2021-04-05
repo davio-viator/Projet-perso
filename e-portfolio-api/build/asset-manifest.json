@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.50f13ee5.chunk.css",
+    "main.js": "/static/js/main.e151315c.chunk.js",
+    "main.js.map": "/static/js/main.e151315c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.98ff192c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.98ff192c.js.map",
+    "static/css/2.89f067aa.chunk.css": "/static/css/2.89f067aa.chunk.css",
+    "static/js/2.6b0b4c81.chunk.js": "/static/js/2.6b0b4c81.chunk.js",
+    "static/js/2.6b0b4c81.chunk.js.map": "/static/js/2.6b0b4c81.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.183cccd3fdedd87abe28f0bc4dfa4b1a.js": "/precache-manifest.183cccd3fdedd87abe28f0bc4dfa4b1a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.89f067aa.chunk.css.map": "/static/css/2.89f067aa.chunk.css.map",
+    "static/css/main.50f13ee5.chunk.css.map": "/static/css/main.50f13ee5.chunk.css.map",
+    "static/js/2.6b0b4c81.chunk.js.LICENSE.txt": "/static/js/2.6b0b4c81.chunk.js.LICENSE.txt",
+    "static/media/Conquest.png": "/static/media/Conquest.8042fb59.png",
+    "static/media/E-Hardware.png": "/static/media/E-Hardware.e6140870.png",
+    "static/media/IUT.png": "/static/media/IUT.f07ca07c.png",
+    "static/media/index.css": "/static/media/background.9cac76b1.png",
+    "static/media/battlefield_PNG41.png": "/static/media/battlefield_PNG41.89f00508.png",
+    "static/media/battlefield_PNG55.png": "/static/media/battlefield_PNG55.06dff5c2.png",
+    "static/media/unnamed.png": "/static/media/unnamed.5b19b25e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98ff192c.js",
+    "static/css/2.89f067aa.chunk.css",
+    "static/js/2.6b0b4c81.chunk.js",
+    "static/css/main.50f13ee5.chunk.css",
+    "static/js/main.e151315c.chunk.js"
+  ]
+}
